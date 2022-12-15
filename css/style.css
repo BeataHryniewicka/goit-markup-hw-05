@@ -152,8 +152,7 @@ button {
   color: var(--brand-color-white);
 }
 /* Hero section */
-.background-hero {
-  background-color: var(--brand-color-background-black);
+.background-hero { 
   padding: 200px 0;
   background-image: linear-gradient(
       var(--brand-color-bg-hero),
@@ -248,6 +247,28 @@ button {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
+.box-overlay-box > img {
+  display: block;
+}
+.box-overlay-work {
+position: relative;
+overflow: hidden;
+}
+.tilte-overlay-work {
+position: absolute;
+bottom: 0;
+height: 70px;
+background-color: #2F303A66;
+;
+text-decoration: uppercase;
+ display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+/* our team  */
+
 .team {
   text-align: center;
   background-color: var(--brand-color-light-grey);
@@ -430,7 +451,38 @@ outline: none;
 .cards-list:hover,
 .cards-list:focus {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
-    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 
+    0px rgba(0, 0, 0, 0.12);
+  cursor:pointer;
+} 
+
+   .box-overlay {
+position: relative;
+overflow: hidden;
+
+}
+.overlay {
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2196F3E5;
+    transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.cards > li:hover .overlay,
+.cards > li:focus .overlay {
+  transform: translateY(0);
+}
+.overlay > p {
+font-size: 18px;
+line-height: 1.75;
+color: var(--brand-color-white);
+padding: 49px 45px 49px 24px;
 }
 .services {
   padding: 20px 24px;
