@@ -115,8 +115,8 @@ button {
 }
 .nav-link:hover,
 .nav-link:focus {
-  color: var(--brand-color-blue);
-  transition: trafsorm color, ;
+  transform: color: var(--brand-color-blue);
+
 }
 .link-current {
   color: var(--brand-color-blue);
