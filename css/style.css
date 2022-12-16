@@ -99,7 +99,6 @@ button {
 .nav-item {
   display: flex;
 }
-
 .nav-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -110,6 +109,7 @@ button {
   text-decoration: none;
   color: var(--brand-color-dark-grey);
   display: flex;
+  position: relative;
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -117,6 +117,17 @@ button {
 }
 .link-current {
   color: var(--brand-color-blue);
+ 
+}
+.link-current::after {
+ content: "";
+ position: absolute;
+  bottom: -34px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var( --brand-color-blue);
+   pointer-events: none;
 }
 .link-current:hover,
 .link-current:focus {
@@ -247,26 +258,29 @@ button {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
-.box-overlay-box > img {
-  display: block;
-}
 .box-overlay-work {
 position: relative;
-overflow: hidden;
+
 }
-.tilte-overlay-work {
+.title-overlay-work {
 position: absolute;
 bottom: 0;
+width: 100%;
 height: 70px;
 background-color: #2F303A66;
 ;
-text-decoration: uppercase;
- display: flex;
-  align-items: center;
-  justify-content: center;
-
-
+display: flex;
+align-items: center;
+justify-content: center;
 }
+.text-overlay-work {
+text-transform: uppercase;
+color: var(--brand-color-white);
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+}
+
 /* our team  */
 
 .team {
@@ -455,23 +469,20 @@ outline: none;
     0px rgba(0, 0, 0, 0.12);
   cursor:pointer;
 } 
-
-   .box-overlay {
+.box-overlay {
 position: relative;
 overflow: hidden;
-
 }
 .overlay {
-   display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
   top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   background-color: #2196F3E5;
-    transform: translateY(100%);
+  transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .cards > li:hover .overlay,
@@ -495,6 +506,7 @@ padding: 49px 45px 49px 24px;
   text-align: left;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
+  color: var(--brand-color-dark-grey);
 }
 .group-of-services {
   font-size: 16px;
