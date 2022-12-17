@@ -528,14 +528,36 @@ button {
 }
 /* modal windows */
 .modaL {
+display: flex;
+background-color: #00000033;
+;
+height: 1024px;
+width: 1600px;;
+position: relative;
+align-items: center;
+top: 0;
+    right:0;
+    left:0;
+    bottom: 0;
+    cursor: not-allowed;
+}
+.modal-box {
+padding: auto;
+width: 528px;
+height: 581px;
+box-shadow: box-shadow: 0px 2px 1px 0px #00000033;
 
-  
+box-shadow: 0px 1px 1px 0px #00000024;
+
+box-shadow: 0px 1px 3px 0px #0000001F;
+;
+
 }
  .data-modal-open {
-
+text-transform: uppercase;
  }
  .data-modal-open-close {
-
+text-transform: uppercase;
  }
  .is-hidden {
 
