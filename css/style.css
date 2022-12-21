@@ -567,3 +567,34 @@ button {
   transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.order-servise-form {
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto;
+  position: relative;
+}
+.order-servise-form p { 
+font-weight: 700;
+font-size: 20px;
+line-height: 1.15;
+text-align: center;
+color: var(--brand-color-black);
+/* position: absolute;} */
+}
+input, textarea {
+  padding: 8px;
+  font-family: inherit;
+  margin: 0 40px;
+}
+
+label {
+display: flex;
+flex-direction: column;
+font-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.01em;
+color: var(--brand-color-dark-grey);
+padding-left: 40px;
+margin-top:10px;
+margin-bottom: 4px
+}
