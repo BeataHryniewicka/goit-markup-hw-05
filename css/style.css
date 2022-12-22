@@ -571,7 +571,7 @@ button {
   display: flex;
   flex-direction: column;
   margin: 40px auto;
-  position: relative;
+  
 }
 .order-servise-form p { 
 font-weight: 700;
@@ -581,7 +581,15 @@ text-align: center;
 color: var(--brand-color-black);
 /* position: absolute;} */
 }
-input, textarea {
+.user-name {
+  display: flex;
+  flex-direction: column;
+position: relative;
+}
+.user-name:focus-within {
+  fill: var(--brand-color-blue);
+}
+input, textarea{
   padding: 8px;
   font-family: inherit;
   margin: 0 40px;
